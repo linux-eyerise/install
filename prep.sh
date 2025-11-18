@@ -39,13 +39,11 @@ if [[ -z $( vgs | grep data ) ]]; then
 fi
 
 
-
 PROCDISK=(root opts vars nets conf vlog vtmp vpac vaud temp docs)
 DATADISK=(home repo)
 
 for n in "${PROCDISK[@]}"
 do
-	
   	mkfs.ext4 -F -q -b 4096 /dev/proc/$n
 done
 

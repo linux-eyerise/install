@@ -29,4 +29,27 @@ if [[ -e /dev/data/dock ]];then
 fi
 
 
-mkdir -p /mnt/{boot,home,opt,var,tmp,srv/http}
+mkdir -p /mnt/{boot,home,opt,var,tmp,srv/http} && 
+
+mount /dev/proc/root /mnt &&
+mount -o uid=0,gid=0,dmask=007,fmask=007 /dev/nvme0n1p1 /mnt/boot/ &&
+mount /dev/proc/opts /mnt/opt &&
+mount /dev/proc/vars /mnt/var &&
+mount /dev/proc/temp /mnt/tmp &&
+mount /dev/proc/docs /mnt/srv/http &&
+mount /dev/data/home /mnt/home &&
+
+mkdir -p /mnt/var/{tmp,log,cache/pacman,net,cfg,lib/hoster,lib/docker} &&
+mount /dev/proc/vtmp /mnt/var/tmp &&
+mount /dev/proc/nets /mnt/var/net &&
+mount /dev/proc/conf /mnt/var/cfg &&
+mount /dev/data/dock /mnt/var/lib/docker &&
+mount /dev/data/host /mnt/var/lib/hoster &&
+
+mount /dev/proc/vpac /mnt/var/cache/pacman &&
+mkdir -p /mnt/var/cache/pacman/lib &&
+
+mkdir -p /mnt/var/log/audit &&
+mount /dev/proc/vaud /mnt/var/log/audit &&
+
+

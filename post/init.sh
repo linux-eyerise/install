@@ -25,6 +25,7 @@ pacman -S wireless-regdb \
     amd-ucode \
     mkinitcpio \
     base-devel \
+    lvm2 \
     mesa \
     lib32-mesa \
     vulkan-radeon \

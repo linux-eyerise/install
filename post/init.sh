@@ -81,8 +81,8 @@ rm /usr/share/xsessions/kodi.desktop &&
 
 
 ## CONFIG
-cp -fr $(pwd)/src/base/* / &&
-cp -fr $(pwd)/src/extra/amd/* / &&
+cp -fr $(pwd)/base/* / &&
+cp -fr $(pwd)/extra/amd/* / &&
 
 
 ## LOCALE
@@ -177,7 +177,6 @@ passwd net
 
 
 ## NOTIF
-
 echo "
 1. config cmdline 01-boot.conf
 2. config /etc/crypttab

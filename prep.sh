@@ -41,12 +41,16 @@ DATADISK=(home repo)
 
 for n in "${PROCDISK[@]}"
 do
-  	mkfs.ext4 -F -q -b 4096 /dev/proc/$n
+	if [[ ! -z /dev/proc/$n ]]; then
+  		mkfs.ext4 -F -q -b 4096 /dev/proc/$n
+	fi
 done
 
 for n in "${DATADISK[@]}"
 do
-   mkfs.ext4 -F -q -b 4096 /dev/data/$n
+	if [[ ! -z /dev/data/$n ]]; then
+   		mkfs.ext4 -F -q -b 4096 /dev/data/$n
+	fi
 done
 
 

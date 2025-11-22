@@ -27,6 +27,7 @@ pacman -S linux-zen\
     sof-firmware \
     openssh \
     firewalld \
+    iptables-nft \
     bluez-utils \
     dnsmasq \
     networkmanager \
@@ -91,6 +92,7 @@ locale-gen &&
 ##
 ## SERVICE
 systemctl enable sddm &&
+systemctl enable sshd &&
 systemctl enable dnsmasq &&
 systemctl enable firewalld &&
 systemctl enable update.timer &&

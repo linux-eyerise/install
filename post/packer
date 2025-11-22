@@ -1,4 +1,4 @@
-PACKAGE=linux-zen \
+DISTRO_INSTALLATION_PACKAGE=linux-zen \
     scx-scheds \
     wireless-regdb \
 	iptables-nft \

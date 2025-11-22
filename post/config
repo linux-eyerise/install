@@ -4,3 +4,5 @@ DISKDATA=/dev/nvme0n1p4
 NVIDIAGC=true
 INTELSGP=true
 AMDGRAPH=false
+INTELPRO=true
+AMDPROCS=false

@@ -24,7 +24,6 @@ pacman -Syy --noconfirm &&
 pacman -S linux-zen\
     scx-scheds \
     wireless-regdb \
-    amd-ucode \
     mkinitcpio \
     base-devel \
     mesa \
@@ -38,10 +37,12 @@ pacman -S linux-zen\
     networkmanager \
     neovim \
     dolphin \
+    jack2 \
     pipewire \
+    wireplumber \
     pipewire-alsa \
-    pipewire-jack \
     pipewire-pulse \
+    pipewire-jack \
     ttf-droid \
     kitty-terminfo \
     bash-completion \
@@ -65,14 +66,29 @@ pacman -S linux-zen\
     blender \
     hiprt \
     inkscape \
-    --noconfirm &&
+    gimp \
+    carla \
+    tenacity \
+    qtractor \
+    hydrogen \
+    yoshimi \
+    digikam \
+    breeze-icons \
+    darktable \
+    scribus \
+    waydroid  --noconfirm &&
+
+
+if [[ ! -z $( lscpi | grep Intel ) ]]; then
+    pacman -S intel-ucode 
+fi
 
 if [[ ! -z $( lscpi | grep NVIDIA ) ]]; then
     pacman -S cuda 
 fi
 
 if [[ ! -z $( lscpi | grep AMD ) ]]; then
-    pacman -S hip-runtime-amd 
+    pacman -S hip-runtime-amd amd-ucode 
 fi
 
 ## CONFIG

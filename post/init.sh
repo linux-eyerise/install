@@ -56,10 +56,7 @@ pacman -S linux-zen\
     sddm \
     firefox \
     kwallet \
-    plasma-nm \
-    ksshaskpass \
-    kwallet-pam \
-    plasma-desktop \
+    plasma \
     kwalletmanager \
     aria2 \
     krita \
@@ -73,9 +70,11 @@ pacman -S linux-zen\
     hydrogen \
     yoshimi \
     digikam \
+    sweethome3d \
     breeze-icons \
     darktable \
     scribus \
+    keepassxc \
     waydroid  --noconfirm &&
 
 
@@ -101,7 +100,7 @@ locale-gen &&
 
 ##
 ## SERVICE
-systemctl enable lightdm &&
+systemctl enable sddm &&
 systemctl enable dnsmasq &&
 systemctl enable update.timer &&
 systemctl enable NetworkManager &&

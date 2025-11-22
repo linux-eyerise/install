@@ -100,17 +100,17 @@ systemctl enable systemd-timesyncd.service &&
 systemctl enable waydroid-container.service
 
 ## enable waydroid
-waydroid init -s GAPPS
+waydroid init -s GAPPS &&
 
 ##
 ## BOOTUPS
-mkdir -p /boot/{efi,kernel,loader}
-mkdir -p /boot/efi/{boot,linux,systemd,rescue}
-mv /boot/vmlinuz-linux-zen /boot/*-ucode.img /boot/kernel/
-rm /etc/mkinitcpio.conf
-rm -fr /etc/mkinitcpio.conf.d/
-rm /boot/initramfs-*
-bootctl --path=/boot/ install
+mkdir -p /boot/{efi,kernel,loader} &&
+mkdir -p /boot/efi/{boot,linux,systemd,rescue} &&
+mv /boot/vmlinuz-linux-zen /boot/*-ucode.img /boot/kernel/ &&
+rm /etc/mkinitcpio.conf &&
+rm -fr /etc/mkinitcpio.conf.d/ &&
+rm /boot/initramfs-* &&
+bootctl --path=/boot/ install &&
 
 
 ## EXECUTE

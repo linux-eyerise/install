@@ -31,10 +31,7 @@ mount /dev/mapper/data /mnt/home &&
 pacstrap /mnt base &&
 
 genfstab -U /mnt > /mnt/etc/fstab &&
-cp -fr $(pwd)/post /mnt &&
+cp -fr /install/post /mnt &&
 
-
-echo "[multilib]" >> /mnt/etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrorlist" >> /mnt/etc/pacman.conf
 
 arch-chroot /mnt /bin/bash /post/init.sh

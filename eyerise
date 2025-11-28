@@ -6,6 +6,7 @@ fi
 
 
 appdir=/install/scripts
+reldir=$(pwd)
 
 if [[ $1 == "--install" ]];then
     /bin/bash $appdir/library/installs &&
@@ -26,6 +27,12 @@ if [[ $1 == "--reset" ]];then
     /bin/bash $appdir/library/reseter &&
     exit
 fi
+
+if [[ $1 == "--getapp" ]];then
+    /bin/bash $(pwd)/scripts/library/getpkg $reldir &&
+    exit
+fi
+
 
 if [[ $1 == "--update" ]];then
     echo "pull repository" && git pull && 

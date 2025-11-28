@@ -1,0 +1,6 @@
+DISKMAIN=/dev/nvme0n1
+DISKBOOT=/dev/nvme0n1p1
+DISKPROC=/dev/nvme0n1p2
+DISKDATA=/dev/nvme0n1p3
+USERNAME=eyerise
+TIMEZONE=Asia/Jakarta

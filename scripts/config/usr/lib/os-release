@@ -1,0 +1,11 @@
+NAME="Eyerise"
+PRETTY_NAME="Eyerise"
+ID=eyerise
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://eyerise.yuros.org"
+DOCUMENTATION_URL="https://eyerise.yuros.org/docs"
+SUPPORT_URL="https://eyerise.yuros.org/forum"
+BUG_REPORT_URL="https://eyerise.yuros.org/issues"
+PRIVACY_POLICY_URL="https://eyerise.org/privacy/"
+LOGO=eyerise-linux

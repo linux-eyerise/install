@@ -3,25 +3,29 @@ Installation scripts for Eyerise OS
 
 ## System Information
 
-| no  | name       | functionality                                                        | type    |
-| --- | ---------- | -------------------------------------------------------------------- | ------- |
-| 1   | linux-lts  | kernel                                                               | core    |
-| 2   | plasma     | desktop environtment                                                 | extra   |
-| 3   | sddm       | display manager                                                      | extra   |
-| 4   | mekuro     | event scheduler                                                      | extra   |
-| 5   | kalk       | calculator                                                           | extra   |
-| 6   | okular     | file viewer                                                          | extra   |
-| 7   | obsidian   | note taking app                                                      | extra   |
-| 8   | obs-studio | screen recorder                                                      | extra   |
-| 9   | hugo       | static website builder                                               | extra   |
-| 10  | grafity    | course management app                                                | webapp  |
-| 11  | nginx      | http webserver and reverse proxy                                     | extra   |
-| 12  | wps-office | office tools                                                         | aur     |
-| 13  | jamovi     | statistical spreadsheet                                              | flathub |
-| 14  | vosviewer  | Software tool for constructing and visualizing bibliometric networks | aur     |
-| 15  | firefox    | web browser                                                          | extra   |
-| 16  | zoom       | Video Conferencing and Web Conferencing Service                      | aur     |
-| 17  | firewalld  | firewall management                                                  | extra   |
-| 18  | mendeley   | reference manager                                                    | aur     |
-| 19  | zotero     | reference manager                                                    | aur     |
-| 20  | teams      | microsoft teams workspace                                            | aur     |
+| no  | name       | functionality                                                        | type     |
+| --- | ---------- | -------------------------------------------------------------------- | -------- |
+| 1   | linux-zen  | kernel                                                               | core     |
+| 2   | plasma     | desktop environtment                                                 | extra    |
+| 3   | sddm       | display manager                                                      | extra    |
+| 4   | inkscape   | create and editing scalable vector graphics images                   | extra    |
+| 5   | calculator | a feature rich calculator                                            | extra    |
+| 6   | okular     | file viewer                                                          | extra    |
+| 7   | firefox    | web browser                                                          | extra    |
+| 8   | firewalld  | firewall management                                                  | extra    |
+| 9   | krita      | digital painting                                                     | extra    |
+| 10  | blender    | modeling 3d                                                          | extra    |
+| 11  | showfoto   | manage photographs                                                   | extra    |
+| 12  | digikam    | manage photographs                                                   | extra    |
+| 13  | darktable  | virtual lighttable dakroom                                           | extra    |
+| 14  | scribus    | page layout                                                          | extra    |
+| 15  | carla      | audio plugin host                                                    | extra    |
+| 16  | mekuro     | event scheduler                                                      | aur      |
+| 17  | obsidian   | note taking app                                                      | aur      |
+| 18  | sweethome3d| interior design application                                          | aur      |
+| 19  | gnu image  | create images and edit                                               | aur      |
+| 20  | waydroid   | android                                                              | aur      |
+| 21  | g'mic-qt   | apply g.mic folters to images                                        | community|
+| 22  | qtractor   | multi-track sequencer                                                | community|
+| 23  | hydrogen   | create drum sequences                                                | community|
+| 24  | yoshimi    | synthezier                                                           | community|
